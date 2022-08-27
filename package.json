@@ -1,12 +1,12 @@
 {
-  "name": "@eliasschaut/ns2-discord-integration",
+  "name": "ns2-discord-integration",
   "version": "1.0.0-beta",
-  "description": "",
+  "description": "A Discord Integration to push stats into a channel when triggered via API call",
   "main": "src/app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node .",
-    "pm": "pm2 start src/app.js --name web-api",
+    "pm": "pm2 start src/app.ts --name web-api",
     "pm-restart": "pm2 reload web-api",
     "pm-stop": "pm2 delete web-api"
   },
@@ -17,20 +17,13 @@
     "discord.js": "^14.3.0",
     "dotenv": "^8.2.0",
     "express": "^4.18.1",
-    "helmet": "^6.0.0"
+    "helmet": "^6.0.0",
+    "ts-node": "^10.9.1"
   },
-  "keywords": [
-    "web-api",
-    "node",
-    "express",
-    "rest",
-    "api"
-  ],
-  "author": "EliasSchaut",
+  "author": "Lila-Kuhlt",
   "license": "MIT",
   "devDependencies": {
     "@types/express": "^4.17.13",
-    "@types/node": "^18.7.13",
-    "ts-node": "^10.9.1"
+    "@types/node": "^18.7.13"
   }
 }
